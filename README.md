@@ -1,5 +1,5 @@
 # Front-end-recruitment-task-3
-* Used:
+Used:
 - HTML
 - CSS (SASS)
 - RWD
