@@ -488,18 +488,18 @@ button {
   /* line 453, sass/style.sass */
   ul {
     line-height: initial; }
-  /* line 455, sass/style.sass */
+  /* line 456, sass/style.sass */
   .macbook {
     visibility: hidden;
     width: 1px; }
   /* features icon */
-  /* line 460, sass/style.sass */
+  /* line 461, sass/style.sass */
   .features {
     padding: 20px; }
-    /* line 463, sass/style.sass */
+    /* line 464, sass/style.sass */
     .features .col-m-4 {
       height: 100px; }
-    /* line 467, sass/style.sass */
+    /* line 468, sass/style.sass */
     .features .container {
       max-width: 350px; } }
 
