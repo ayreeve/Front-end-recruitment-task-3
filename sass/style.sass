@@ -1,0 +1,458 @@
+/* VARIABLES */
+/* colors */   
+
+$col_white: #fff
+$col_blue: #0d76b5
+$col_darkblue: #25365d
+$col_gray: #5a5a5a
+
+/* mixins */
+
+=transition($transition)
+    -webkit-transition: $transition
+    transition: $transition
+
+/* GLOBAL */
+
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0 0 250px 0
+    background-color: #008AD2
+    background-image: url('../images/background/background.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    font-family: 'Open Sans', sans-serif
+               
+section
+    width: 100%
+            
+.container 
+    max-width: 960px
+    margin: 0 auto
+  
+/* grid */
+
+[class*="col-"] 
+    width: 100%
+    float: left
+
+.row:before,
+.row:after 
+    content: ""
+    display: table
+    clear: both  
+  
+/* HEADER, NAV, LOGO */
+
+header 
+    height: 87px
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 2
+    background-color: $col_blue
+      
+    nav 
+        &:before,
+        &:after 
+            content: ""
+            display: table
+
+        &:after 
+            clear: both
+        img 
+            padding: 22px 0
+            +transition(linear .4s)
+            &:hover 
+                transform: scale(0.9)
+                cursor: pointer
+        ul 
+            margin: 0
+            padding: 0
+            float: right
+            list-style-type: none
+            
+            li
+                display: inline-block
+                
+                a
+                    &:last-child
+                        padding-right: 0
+                        padding: 0 40px
+                        display: block
+                        line-height: 84px
+                        font-size: 1.25em
+                        font-weight: bold
+                        text-decoration: none
+                        color: $col_white
+                        +transition(linear .2s)
+                        &:hover
+                            color: rgba(255, 255, 255, 0.72)
+
+/* JUMBOTRON (with button) */       
+.jumbotron
+    text-align: center
+    
+    h1
+        margin: 150px 0 0 0
+        font-size: 5em
+        font-weight: bold
+        text-transform: uppercase
+        color: $col_white
+          
+.slogan_text
+    max-width: 750px
+    margin: 0 auto
+    font-size: 1.5em
+    color: #bbd8ff
+    
+button
+    margin-top: 40px
+    padding: 12px 40px
+    border: none
+    border-radius: 40px
+    background-color: $col_darkblue
+    font-size: 1.13em
+    color: $col_white
+    cursor: pointer
+    +transition(linear .4s)
+    &:hover 
+        background-color: rgba(40, 70, 137, 0.95)
+        
+    img
+        margin-right: 5px
+        position: relative
+        top: 2px
+        z-index: 1
+
+.fading_text
+    position: relative
+    top: 220px
+    font-weight: bold
+    font-size: 10.125em
+    text-transform: uppercase
+    text-align: center
+    color: $col_white
+    
+/* OFFER */
+.offer
+    position: relative
+    bottom: 50px
+    line-height: 32px
+    
+    h2
+        text-transform: uppercase
+        font-size: 3em
+        color: $col_darkblue
+    p 
+        color: $col_gray 
+        
+    ul
+        padding: 20px
+        list-style: url(../images/icons/checked_icon.png)
+        color: #93aac9
+
+.macbook
+    position: relative
+    bottom: 10px
+    right: 270px
+    
+/* FEATURES (ICONS) */    
+.features
+    padding: 70px 0
+    background-color: #ebebeb
+    
+    img
+        float: left
+        position: relative
+        top: 20px
+        
+    h3
+        margin-left: 80px
+        text-transform: uppercase
+        color: $col_darkblue
+                
+    p
+        margin-left: 80px
+        color: $col_gray
+        
+.features_item
+    padding-right: 25px
+
+/* DOWNLOAD */    
+.download
+    padding: 0
+    text-align: center
+    
+    h2        
+        font-size: 3.81em
+        color: $col_darkblue
+        
+    button
+        display: flex
+        margin: 50px auto 200px auto
+        
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track 
+    border-radius: 10px
+    
+::-webkit-scrollbar
+    width: 10px
+    height: 10px
+    background-color: $col_blue
+
+::-webkit-scrollbar-thumb 
+    border-radius: 10px
+    background-color: $col_darkblue    
+        
+/* MEDIA QUERIES */
+@media (max-width: 1365px)
+    /* jumbotron */
+    .fading_text
+        top: 300px
+        font-size: 6em
+        text-align: center
+        
+    /* offer */
+    .offer
+        top: 115px
+        padding-bottom: 165px
+        
+        button
+            margin-top: 0
+        
+    .macbook
+        transform: scale(.7)
+        bottom: -180px
+               
+@media (max-width: 992px)
+    /* global */
+    body
+        font-size: 14px
+        
+    /* menu */
+    header 
+        height: auto
+        padding-bottom: 10px
+        text-align: center
+
+        nav
+            ul
+                float: none
+                
+                li 
+                    display: block
+                    
+                    a
+                        line-height: 25px
+            
+            img 
+                padding: 10px 0 0
+                
+    /* jumbotron */            
+    .jumbotron
+        h1
+            padding: 10px
+            
+    .slogan_text
+        max-width: 450px
+        padding: 0 10px
+        
+    .fading_text
+        top: 230px
+    /* offer */
+    .offer
+        top: 130px
+        padding-left: 20px
+        
+        h2
+            font-size: 2.5em
+        
+        button
+            margin-top: 0
+            
+    /* features icon */
+    .features
+        padding: 20px 25px
+           
+    /* download */
+    .download
+        h2
+            font-size: 3em
+        p
+            padding: 0 60px
+    
+@media (min-width: 768px)
+    /* GRID: */
+    /* For desktop: */
+    .col-m-1 
+    width: 8.33%
+    .col-m-2 
+        width: 16.66%
+    .col-m-3 
+        width: 25%
+    .col-m-4 
+        width: 33.33%
+    .col-m-5 
+        width: 41.66%
+    .col-m-6 
+        width: 50%
+    .col-m-7
+        width: 58.33%
+    .col-m-8 
+        width: 66.66%
+    .col-m-9 
+        width: 75%
+    .col-m-10 
+        width: 83.33%
+    .col-m-11 
+        width: 91.66%
+    .col-m-12
+        width: 100%
+        
+@media (max-width: 857px)
+    /* jumbotron */
+    .fading_text
+        top: 250px
+        
+    /* offer */
+    .macbook
+        left: -170px
+        bottom: -240px
+        transform: scale(.5)
+        
+@media (max-width: 767px) 
+    /* For tablets: */
+    .col-s-1 
+        width: 8.33%
+    .col-s-2 
+        width: 16.66%
+    .col-s-3 
+        width: 25%
+    .col-s-4 
+        width: 33.33%
+    .col-s-5 
+        width: 41.66%
+    .col-s-6 
+        width: 50%
+    .col-s-7 
+        width: 58.33%
+    .col-s-8 
+        width: 66.66%
+    .col-s-9 
+        width: 75%
+    .col-s-10
+        width: 83.33%
+    .col-s-11 
+        width: 91.66%
+    .col-s-12 
+        width: 100%    
+        
+    /* STYLES */
+    /* jumbotron */
+    .fading_text
+        top: 340px
+        font-size: 4.5em
+        
+    /* offer */
+    .offer
+        top: 200px
+        padding-bottom: 0
+        
+        h2, p
+            padding: 10px
+            line-height: initial
+                                
+    .macbook
+        left: 60px
+        bottom: 130px
+        transform: scale(.4)
+        
+    /* features */
+    .mobile_padding
+        padding-right: 25px
+    
+    /* download */
+    .download
+        h2
+            font-size: 2.5em
+            padding: 0 10px
+        
+        p
+            padding: 0 20px
+            
+@media (max-width: 598px) 
+    /* For mobiles: */
+    .col-xs-1 
+        width: 8.33%
+    
+    .col-xs-2 
+        width: 16.66%
+
+    .col-xs-3 
+        width: 25%
+
+    .col-xs-4 
+        width: 33.33%
+
+    .col-xs-5 
+        width: 41.66%
+
+    .col-xs-6 
+        width: 50%
+
+    .col-xs-7 
+        width: 58.33%
+
+    .col-xs-8 
+        width: 66.66%
+
+    .col-xs-9 
+        width: 75%
+    
+    .col-xs-10 
+        width: 83.33%
+    
+    .col-xs-11 
+        width: 91.66%
+    
+    .col-xs-12 
+        width: 100%   
+        
+    /* STYLES */
+    /* global */
+    body
+        font-size: 12px
+    /* jumbotron */            
+    .jumbotron
+        h1
+            font-size: 3em
+    button
+        padding: 8px 13px
+        line-height: 20px
+     
+    .fading_text
+        top: 290px
+        font-size: 2.8em
+                   
+    /* offer */
+    .offer
+        h2
+            font-size: 2em
+    ul
+        line-height: initial
+    .macbook
+        visibility: hidden
+        
+    /* features icon */
+    .features
+        padding: 20px
+        
+        .container
+            max-width: 350px  
+    

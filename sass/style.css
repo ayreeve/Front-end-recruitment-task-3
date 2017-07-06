@@ -1,0 +1,495 @@
+/* VARIABLES */
+/* colors */
+/* mixins */
+/* GLOBAL */
+/* line 17, sass/style.sass */
+* {
+  box-sizing: border-box; }
+
+/* line 20, sass/style.sass */
+body {
+  margin: 0;
+  padding: 0 0 250px 0;
+  background-color: #008AD2;
+  background-image: url("../images/background/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 29, sass/style.sass */
+section {
+  width: 100%; }
+
+/* line 32, sass/style.sass */
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+/* grid */
+/* line 38, sass/style.sass */
+[class*="col-"] {
+  width: 100%;
+  float: left; }
+
+/* line 42, sass/style.sass */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* HEADER, NAV, LOGO */
+/* line 50, sass/style.sass */
+header {
+  height: 87px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #0d76b5; }
+  /* line 60, sass/style.sass */
+  header nav:before, header nav:after {
+    content: "";
+    display: table; }
+  /* line 65, sass/style.sass */
+  header nav:after {
+    clear: both; }
+  /* line 67, sass/style.sass */
+  header nav img {
+    padding: 22px 0;
+    -webkit-transition: linear 0.4s;
+    transition: linear 0.4s; }
+    /* line 70, sass/style.sass */
+    header nav img:hover {
+      transform: scale(0.9);
+      cursor: pointer; }
+  /* line 73, sass/style.sass */
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none; }
+    /* line 79, sass/style.sass */
+    header nav ul li {
+      display: inline-block; }
+      /* line 83, sass/style.sass */
+      header nav ul li a:last-child {
+        padding-right: 0;
+        padding: 0 40px;
+        display: block;
+        line-height: 84px;
+        font-size: 1.25em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        -webkit-transition: linear 0.2s;
+        transition: linear 0.2s; }
+        /* line 93, sass/style.sass */
+        header nav ul li a:last-child:hover {
+          color: rgba(255, 255, 255, 0.72); }
+
+/* JUMBOTRON (with button) */
+/* line 97, sass/style.sass */
+.jumbotron {
+  text-align: center; }
+  /* line 100, sass/style.sass */
+  .jumbotron h1 {
+    margin: 150px 0 0 0;
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+
+/* line 107, sass/style.sass */
+.slogan_text {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #bbd8ff; }
+
+/* line 113, sass/style.sass */
+button {
+  margin-top: 40px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 40px;
+  background-color: #25365d;
+  font-size: 1.13em;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: linear 0.4s;
+  transition: linear 0.4s; }
+  /* line 123, sass/style.sass */
+  button:hover {
+    background-color: rgba(40, 70, 137, 0.95); }
+  /* line 126, sass/style.sass */
+  button img {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    z-index: 1; }
+
+/* line 132, sass/style.sass */
+.fading_text {
+  position: relative;
+  top: 220px;
+  font-weight: bold;
+  font-size: 10.125em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff; }
+
+/* OFFER */
+/* line 142, sass/style.sass */
+.offer {
+  position: relative;
+  bottom: 50px;
+  line-height: 32px; }
+  /* line 147, sass/style.sass */
+  .offer h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #25365d; }
+  /* line 151, sass/style.sass */
+  .offer p {
+    color: #5a5a5a; }
+  /* line 154, sass/style.sass */
+  .offer ul {
+    padding: 20px;
+    list-style: url(../images/icons/checked_icon.png);
+    color: #93aac9; }
+
+/* line 159, sass/style.sass */
+.macbook {
+  position: relative;
+  bottom: 10px;
+  right: 270px; }
+
+/* FEATURES (ICONS) */
+/* line 165, sass/style.sass */
+.features {
+  padding: 70px 0;
+  background-color: #ebebeb; }
+  /* line 169, sass/style.sass */
+  .features img {
+    float: left;
+    position: relative;
+    top: 20px; }
+  /* line 174, sass/style.sass */
+  .features h3 {
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: #25365d; }
+  /* line 179, sass/style.sass */
+  .features p {
+    margin-left: 80px;
+    color: #5a5a5a; }
+
+/* line 183, sass/style.sass */
+.features_item {
+  padding-right: 25px; }
+
+/* DOWNLOAD */
+/* line 187, sass/style.sass */
+.download {
+  padding: 0;
+  text-align: center; }
+  /* line 191, sass/style.sass */
+  .download h2 {
+    font-size: 3.81em;
+    color: #25365d; }
+  /* line 195, sass/style.sass */
+  .download button {
+    display: flex;
+    margin: 50px auto 200px auto; }
+
+/* SCROLLBAR */
+/* line 201, sass/style.sass */
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+/* line 204, sass/style.sass */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #0d76b5; }
+
+/* line 209, sass/style.sass */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #25365d; }
+
+/* MEDIA QUERIES */
+@media (max-width: 1365px) {
+  /* jumbotron */
+  /* line 216, sass/style.sass */
+  .fading_text {
+    top: 300px;
+    font-size: 6em;
+    text-align: center; }
+  /* offer */
+  /* line 222, sass/style.sass */
+  .offer {
+    top: 115px;
+    padding-bottom: 165px; }
+    /* line 226, sass/style.sass */
+    .offer button {
+      margin-top: 0; }
+  /* line 229, sass/style.sass */
+  .macbook {
+    transform: scale(0.7);
+    bottom: -180px; } }
+
+@media (max-width: 992px) {
+  /* global */
+  /* line 235, sass/style.sass */
+  body {
+    font-size: 14px; }
+  /* menu */
+  /* line 239, sass/style.sass */
+  header {
+    height: auto;
+    padding-bottom: 10px;
+    text-align: center; }
+    /* line 245, sass/style.sass */
+    header nav ul {
+      float: none; }
+      /* line 248, sass/style.sass */
+      header nav ul li {
+        display: block; }
+        /* line 251, sass/style.sass */
+        header nav ul li a {
+          line-height: 25px; }
+    /* line 254, sass/style.sass */
+    header nav img {
+      padding: 10px 0 0; }
+  /* jumbotron */
+  /* line 259, sass/style.sass */
+  .jumbotron h1 {
+    padding: 10px; }
+  /* line 262, sass/style.sass */
+  .slogan_text {
+    max-width: 450px;
+    padding: 0 10px; }
+  /* line 266, sass/style.sass */
+  .fading_text {
+    top: 230px; }
+  /* offer */
+  /* line 269, sass/style.sass */
+  .offer {
+    top: 130px;
+    padding-left: 20px; }
+    /* line 273, sass/style.sass */
+    .offer h2 {
+      font-size: 2.5em; }
+    /* line 276, sass/style.sass */
+    .offer button {
+      margin-top: 0; }
+  /* features icon */
+  /* line 280, sass/style.sass */
+  .features {
+    padding: 20px 25px; }
+  /* download */
+  /* line 285, sass/style.sass */
+  .download h2 {
+    font-size: 3em; }
+  /* line 287, sass/style.sass */
+  .download p {
+    padding: 0 60px; } }
+
+@media (min-width: 768px) {
+  /* GRID: */
+  /* For desktop: */
+  width: 8.33%;
+  /* line 295, sass/style.sass */
+  .col-m-2 {
+    width: 16.66%; }
+  /* line 297, sass/style.sass */
+  .col-m-3 {
+    width: 25%; }
+  /* line 299, sass/style.sass */
+  .col-m-4 {
+    width: 33.33%; }
+  /* line 301, sass/style.sass */
+  .col-m-5 {
+    width: 41.66%; }
+  /* line 303, sass/style.sass */
+  .col-m-6 {
+    width: 50%; }
+  /* line 305, sass/style.sass */
+  .col-m-7 {
+    width: 58.33%; }
+  /* line 307, sass/style.sass */
+  .col-m-8 {
+    width: 66.66%; }
+  /* line 309, sass/style.sass */
+  .col-m-9 {
+    width: 75%; }
+  /* line 311, sass/style.sass */
+  .col-m-10 {
+    width: 83.33%; }
+  /* line 313, sass/style.sass */
+  .col-m-11 {
+    width: 91.66%; }
+  /* line 315, sass/style.sass */
+  .col-m-12 {
+    width: 100%; } }
+
+@media (max-width: 857px) {
+  /* jumbotron */
+  /* line 320, sass/style.sass */
+  .fading_text {
+    top: 250px; }
+  /* offer */
+  /* line 324, sass/style.sass */
+  .macbook {
+    left: -170px;
+    bottom: -240px;
+    transform: scale(0.5); } }
+
+@media (max-width: 767px) {
+  /* For tablets: */
+  /* line 331, sass/style.sass */
+  .col-s-1 {
+    width: 8.33%; }
+  /* line 333, sass/style.sass */
+  .col-s-2 {
+    width: 16.66%; }
+  /* line 335, sass/style.sass */
+  .col-s-3 {
+    width: 25%; }
+  /* line 337, sass/style.sass */
+  .col-s-4 {
+    width: 33.33%; }
+  /* line 339, sass/style.sass */
+  .col-s-5 {
+    width: 41.66%; }
+  /* line 341, sass/style.sass */
+  .col-s-6 {
+    width: 50%; }
+  /* line 343, sass/style.sass */
+  .col-s-7 {
+    width: 58.33%; }
+  /* line 345, sass/style.sass */
+  .col-s-8 {
+    width: 66.66%; }
+  /* line 347, sass/style.sass */
+  .col-s-9 {
+    width: 75%; }
+  /* line 349, sass/style.sass */
+  .col-s-10 {
+    width: 83.33%; }
+  /* line 351, sass/style.sass */
+  .col-s-11 {
+    width: 91.66%; }
+  /* line 353, sass/style.sass */
+  .col-s-12 {
+    width: 100%; }
+  /* STYLES */
+  /* jumbotron */
+  /* line 358, sass/style.sass */
+  .fading_text {
+    top: 340px;
+    font-size: 4.5em; }
+  /* offer */
+  /* line 363, sass/style.sass */
+  .offer {
+    top: 200px;
+    padding-bottom: 0; }
+    /* line 367, sass/style.sass */
+    .offer h2, .offer p {
+      padding: 10px;
+      line-height: initial; }
+  /* line 371, sass/style.sass */
+  .macbook {
+    left: 60px;
+    bottom: 130px;
+    transform: scale(0.4); }
+  /* features */
+  /* line 377, sass/style.sass */
+  .mobile_padding {
+    padding-right: 25px; }
+  /* download */
+  /* line 382, sass/style.sass */
+  .download h2 {
+    font-size: 2.5em;
+    padding: 0 10px; }
+  /* line 386, sass/style.sass */
+  .download p {
+    padding: 0 20px; } }
+
+@media (max-width: 598px) {
+  /* For mobiles: */
+  /* line 391, sass/style.sass */
+  .col-xs-1 {
+    width: 8.33%; }
+  /* line 394, sass/style.sass */
+  .col-xs-2 {
+    width: 16.66%; }
+  /* line 397, sass/style.sass */
+  .col-xs-3 {
+    width: 25%; }
+  /* line 400, sass/style.sass */
+  .col-xs-4 {
+    width: 33.33%; }
+  /* line 403, sass/style.sass */
+  .col-xs-5 {
+    width: 41.66%; }
+  /* line 406, sass/style.sass */
+  .col-xs-6 {
+    width: 50%; }
+  /* line 409, sass/style.sass */
+  .col-xs-7 {
+    width: 58.33%; }
+  /* line 412, sass/style.sass */
+  .col-xs-8 {
+    width: 66.66%; }
+  /* line 415, sass/style.sass */
+  .col-xs-9 {
+    width: 75%; }
+  /* line 418, sass/style.sass */
+  .col-xs-10 {
+    width: 83.33%; }
+  /* line 421, sass/style.sass */
+  .col-xs-11 {
+    width: 91.66%; }
+  /* line 424, sass/style.sass */
+  .col-xs-12 {
+    width: 100%; }
+  /* STYLES */
+  /* global */
+  /* line 429, sass/style.sass */
+  body {
+    font-size: 12px; }
+  /* jumbotron */
+  /* line 433, sass/style.sass */
+  .jumbotron h1 {
+    font-size: 3em; }
+  /* line 435, sass/style.sass */
+  button {
+    padding: 8px 13px;
+    line-height: 20px; }
+  /* line 439, sass/style.sass */
+  .fading_text {
+    top: 290px;
+    font-size: 2.8em; }
+  /* offer */
+  /* line 445, sass/style.sass */
+  .offer h2 {
+    font-size: 2em; }
+  /* line 447, sass/style.sass */
+  ul {
+    line-height: initial; }
+  /* line 449, sass/style.sass */
+  .macbook {
+    visibility: hidden; }
+  /* features icon */
+  /* line 453, sass/style.sass */
+  .features {
+    padding: 20px; }
+    /* line 456, sass/style.sass */
+    .features .container {
+      max-width: 350px; } }
+
+/*# sourceMappingURL=style.css.map */
