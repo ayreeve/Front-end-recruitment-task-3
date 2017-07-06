@@ -61,7 +61,7 @@ header {
     header nav ul li {
       display: inline-block; }
       header nav ul li a {
-        line-height: 25px; }
+        line-height: 85px; }
         header nav ul li a:last-child {
           padding-right: 0;
           padding: 0 40px;
@@ -144,6 +144,8 @@ button {
 .features {
   padding: 70px 0;
   background-color: #ebebeb; }
+  .features .col-m-4 {
+    height: 180px; }
   .features img {
     float: left;
     position: relative;
@@ -207,6 +209,7 @@ button {
   /* menu */
   header {
     height: auto;
+    position: absolute;
     padding-bottom: 10px;
     text-align: center; }
     header nav ul {
@@ -219,7 +222,7 @@ button {
       padding: 10px 0 0; }
   /* jumbotron */
   .jumbotron h1 {
-    padding: 10px; }
+    padding: 30px; }
   .slogan_text {
     max-width: 450px;
     padding: 0 10px; }
@@ -321,6 +324,9 @@ button {
     left: 60px;
     bottom: 130px;
     transform: scale(0.4); }
+  /* features */
+  .mobile_padding {
+    padding-right: 30px; }
   /* download */
   .download h2 {
     font-size: 2.5em;
