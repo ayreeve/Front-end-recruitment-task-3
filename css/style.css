@@ -48,10 +48,10 @@ header {
     clear: both; }
   header nav img {
     padding: 22px 0;
+    -webkit-transition: linear 0.4s;
     transition: linear 0.4s; }
     header nav img:hover {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+      transform: scale(0.9);
       cursor: pointer; }
   header nav ul {
     margin: 0;
@@ -60,18 +60,20 @@ header {
     list-style-type: none; }
     header nav ul li {
       display: inline-block; }
-      header nav ul li a:last-child {
-        padding-right: 0;
-        padding: 0 40px;
-        display: block;
-        line-height: 84px;
-        font-size: 1.25em;
-        font-weight: bold;
-        text-decoration: none;
-        color: #fff;
-        transition: linear 0.2s; }
-        header nav ul li a:last-child:hover {
-          color: rgba(255, 255, 255, 0.72); }
+      header nav ul li a {
+        line-height: 25px; }
+        header nav ul li a:last-child {
+          padding-right: 0;
+          padding: 0 40px;
+          display: block;
+          font-size: 1.25em;
+          font-weight: bold;
+          text-decoration: none;
+          color: #fff;
+          -webkit-transition: linear 0.2s;
+          transition: linear 0.2s; }
+          header nav ul li a:last-child:hover {
+            color: rgba(255, 255, 255, 0.72); }
 
 /* JUMBOTRON (with button) */
 .jumbotron {
@@ -98,6 +100,7 @@ button {
   font-size: 1.13em;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: linear 0.4s;
   transition: linear 0.4s; }
   button:hover {
     background-color: rgba(40, 70, 137, 0.95); }
@@ -164,8 +167,6 @@ button {
     font-size: 3.81em;
     color: #25365d; }
   .download button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 50px auto 200px auto; }
 
@@ -196,8 +197,7 @@ button {
     .offer button {
       margin-top: 0; }
   .macbook {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
     bottom: -180px; } }
 
 @media (max-width: 992px) {
@@ -277,8 +277,7 @@ button {
   .macbook {
     left: -170px;
     bottom: -240px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); } }
+    transform: scale(0.5); } }
 
 @media (max-width: 767px) {
   /* For tablets: */
@@ -321,11 +320,7 @@ button {
   .macbook {
     left: 60px;
     bottom: 130px;
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4); }
-  /* features */
-  .mobile_padding {
-    padding-right: 25px; }
+    transform: scale(0.4); }
   /* download */
   .download h2 {
     font-size: 2.5em;
@@ -384,3 +379,5 @@ button {
     padding: 20px; }
     .features .container {
       max-width: 350px; } }
+
+/*# sourceMappingURL=style.css.map */
