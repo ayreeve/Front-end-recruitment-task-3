@@ -490,7 +490,7 @@ button {
     line-height: initial; }
   /* line 455, sass/style.sass */
   .macbook {
-    visibility: hidden; }
+    width: 1px; }
   /* features icon */
   /* line 459, sass/style.sass */
   .features {
