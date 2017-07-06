@@ -2,6 +2,7 @@
 Used:
 - HTML
 - CSS (SASS)
+- jQuery
 - RWD
 - Grunt, Git
 
