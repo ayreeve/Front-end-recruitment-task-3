@@ -145,7 +145,7 @@ button {
   padding: 70px 0;
   background-color: #ebebeb; }
   .features .col-m-4 {
-    height: 180px; }
+    height: 150px; }
   .features img {
     float: left;
     position: relative;
@@ -170,7 +170,7 @@ button {
     color: #25365d; }
   .download button {
     display: flex;
-    margin: 50px auto 200px auto; }
+    margin: 50px auto 170px auto; }
 
 /* SCROLLBAR */
 ::-webkit-scrollbar-track {
@@ -222,7 +222,7 @@ button {
       padding: 10px 0 0; }
   /* jumbotron */
   .jumbotron h1 {
-    padding: 30px; }
+    padding: 45px; }
   .slogan_text {
     max-width: 450px;
     padding: 0 10px; }
@@ -316,13 +316,14 @@ button {
   /* offer */
   .offer {
     top: 200px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: -200px; }
     .offer h2, .offer p {
       padding: 10px;
       line-height: initial; }
   .macbook {
     left: 60px;
-    bottom: 130px;
+    bottom: -80px;
     transform: scale(0.4); }
   /* features */
   .mobile_padding {
@@ -383,6 +384,8 @@ button {
   /* features icon */
   .features {
     padding: 20px; }
+    .features .col-m-4 {
+      height: 100px; }
     .features .container {
       max-width: 350px; } }
 

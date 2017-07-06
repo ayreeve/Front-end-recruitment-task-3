@@ -175,7 +175,7 @@ button {
   background-color: #ebebeb; }
   /* line 169, sass/style.sass */
   .features .col-m-4 {
-    height: 180px; }
+    height: 150px; }
   /* line 172, sass/style.sass */
   .features img {
     float: left;
@@ -207,7 +207,7 @@ button {
   /* line 198, sass/style.sass */
   .download button {
     display: flex;
-    margin: 50px auto 200px auto; }
+    margin: 50px auto 170px auto; }
 
 /* SCROLLBAR */
 /* line 204, sass/style.sass */
@@ -273,7 +273,7 @@ button {
   /* jumbotron */
   /* line 263, sass/style.sass */
   .jumbotron h1 {
-    padding: 30px; }
+    padding: 45px; }
   /* line 266, sass/style.sass */
   .slogan_text {
     max-width: 450px;
@@ -402,99 +402,103 @@ button {
   /* line 367, sass/style.sass */
   .offer {
     top: 200px;
-    padding-bottom: 0; }
-    /* line 371, sass/style.sass */
+    padding-bottom: 0;
+    margin-bottom: -200px; }
+    /* line 372, sass/style.sass */
     .offer h2, .offer p {
       padding: 10px;
       line-height: initial; }
-  /* line 375, sass/style.sass */
+  /* line 376, sass/style.sass */
   .macbook {
     left: 60px;
-    bottom: 130px;
+    bottom: -80px;
     transform: scale(0.4); }
   /* features */
-  /* line 381, sass/style.sass */
+  /* line 382, sass/style.sass */
   .mobile_padding {
     padding-right: 30px; }
   /* download */
-  /* line 386, sass/style.sass */
+  /* line 387, sass/style.sass */
   .download h2 {
     font-size: 2.5em;
     padding: 0 10px; }
-  /* line 390, sass/style.sass */
+  /* line 391, sass/style.sass */
   .download p {
     padding: 0 20px; } }
 
 @media (max-width: 598px) {
   /* For mobiles: */
-  /* line 395, sass/style.sass */
+  /* line 396, sass/style.sass */
   .col-xs-1 {
     width: 8.33%; }
-  /* line 398, sass/style.sass */
+  /* line 399, sass/style.sass */
   .col-xs-2 {
     width: 16.66%; }
-  /* line 401, sass/style.sass */
+  /* line 402, sass/style.sass */
   .col-xs-3 {
     width: 25%; }
-  /* line 404, sass/style.sass */
+  /* line 405, sass/style.sass */
   .col-xs-4 {
     width: 33.33%; }
-  /* line 407, sass/style.sass */
+  /* line 408, sass/style.sass */
   .col-xs-5 {
     width: 41.66%; }
-  /* line 410, sass/style.sass */
+  /* line 411, sass/style.sass */
   .col-xs-6 {
     width: 50%; }
-  /* line 413, sass/style.sass */
+  /* line 414, sass/style.sass */
   .col-xs-7 {
     width: 58.33%; }
-  /* line 416, sass/style.sass */
+  /* line 417, sass/style.sass */
   .col-xs-8 {
     width: 66.66%; }
-  /* line 419, sass/style.sass */
+  /* line 420, sass/style.sass */
   .col-xs-9 {
     width: 75%; }
-  /* line 422, sass/style.sass */
+  /* line 423, sass/style.sass */
   .col-xs-10 {
     width: 83.33%; }
-  /* line 425, sass/style.sass */
+  /* line 426, sass/style.sass */
   .col-xs-11 {
     width: 91.66%; }
-  /* line 428, sass/style.sass */
+  /* line 429, sass/style.sass */
   .col-xs-12 {
     width: 100%; }
   /* STYLES */
   /* global */
-  /* line 433, sass/style.sass */
+  /* line 434, sass/style.sass */
   body {
     font-size: 12px; }
   /* jumbotron */
-  /* line 437, sass/style.sass */
+  /* line 439, sass/style.sass */
   .jumbotron h1 {
     font-size: 3em; }
-  /* line 439, sass/style.sass */
+  /* line 441, sass/style.sass */
   button {
     padding: 8px 13px;
     line-height: 20px; }
-  /* line 443, sass/style.sass */
+  /* line 445, sass/style.sass */
   .fading_text {
     top: 290px;
     font-size: 2.8em; }
   /* offer */
-  /* line 449, sass/style.sass */
+  /* line 451, sass/style.sass */
   .offer h2 {
     font-size: 2em; }
-  /* line 451, sass/style.sass */
+  /* line 453, sass/style.sass */
   ul {
     line-height: initial; }
-  /* line 453, sass/style.sass */
+  /* line 455, sass/style.sass */
   .macbook {
     visibility: hidden; }
   /* features icon */
-  /* line 457, sass/style.sass */
+  /* line 459, sass/style.sass */
   .features {
     padding: 20px; }
-    /* line 460, sass/style.sass */
+    /* line 462, sass/style.sass */
+    .features .col-m-4 {
+      height: 100px; }
+    /* line 466, sass/style.sass */
     .features .container {
       max-width: 350px; } }
 
