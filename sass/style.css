@@ -490,15 +490,16 @@ button {
     line-height: initial; }
   /* line 455, sass/style.sass */
   .macbook {
+    visibility: hidden;
     width: 1px; }
   /* features icon */
-  /* line 459, sass/style.sass */
+  /* line 460, sass/style.sass */
   .features {
     padding: 20px; }
-    /* line 462, sass/style.sass */
+    /* line 463, sass/style.sass */
     .features .col-m-4 {
       height: 100px; }
-    /* line 466, sass/style.sass */
+    /* line 467, sass/style.sass */
     .features .container {
       max-width: 350px; } }
 
